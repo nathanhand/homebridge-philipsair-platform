@@ -50,6 +50,17 @@ const models = {
       },
     },
   },
+  AC2939: {
+    speeds: [
+      { mode: 'S' }, // Sleep
+      { mode: 'GT' }, // Gentle
+      { mode: 'T' }, // Turbo
+    ],
+    modeMaps: {
+      auto: { registers: { mode: 'AG' }, speed: 0 },
+      manual: { registers: { mode: 'S' }, speed: 33 },
+    },
+  },
   AC0850: {
     speeds: [
       { D0310A: 2, D0310C: 17 },
